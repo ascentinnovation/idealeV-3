@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { Page1Component} from '../app/page1/page1.component';
-import { NewdemoComponent} from '../app/newdemo/newdemo.component';
 import { Page2Component} from '../app/page2/page2.component';
 import { AproposComponent} from '../app/apropos/apropos.component';
 import { HomeComponent} from '../app/home/home.component';
@@ -19,6 +18,7 @@ import { EnergieComponent} from '../app/energie/energie.component';
 import { Page3Component } from '../app/page3/page3.component';
 import { CategorieComponent} from '../app/categorie/categorie.component';
 import { Page28Component } from '../app/page28/page28.component';
+import {Page6Component} from '../app/page6/page6.component';
 
 
 ///information routing
@@ -32,24 +32,24 @@ import { CatgorieinfoComponent } from '../app/catgorieinfo/catgorieinfo.componen
 import { TransmissioninfoComponent } from '../app/transmissioninfo/transmissioninfo.component';
 import { PerformanceinfoComponent } from '../app/performanceinfo/performanceinfo.component';
 import { ResultatderechecheComponent } from '../app/resultatderecheche/resultatderecheche.component';
-const routes: Routes = [
+import {ResultatsdemarechercheComponent} from '../app/resultatsdemarecherche/resultatsdemarecherche.component';
+import {FilterparmarquesComponent} from '../app/filterparmarques/filterparmarques.component';
+ const routes: Routes = [
   
   {path:'',component:HomeComponent},
   {path: 'MonCompute', component:Page1Component},
-  {path: 'demo', component:NewdemoComponent},
-  {path: 'Page2',component:Page2Component},
+  {path: 'Page2', component:Page2Component},
   {path: 'Maselectionservices',component:Page3Component}, 
-  {path: 'Apropos',component:AproposComponent},
-  {path: 'Resultatderecheche', component:ResultatderechecheComponent},
-  // {path: 'seconnecter1',component:Page5Component},
-  // {path: 'seconnecter',component:Page6Component},
+  {path: 'Apropos', component:AproposComponent},
+  {path: 'Resultatderecheche', component:ResultatderechecheComponent},  
+  {path: 'seconnecter', component:Page6Component},
   // {path: 'mandatderecherche',component:Page7Component},
-  {path: 'Securite',component:SecuriteComponent},
-  {path: 'Performance',component:PerformanceComponent},
-  {path: 'Confort',component:ConfortComponent},
-  {path: 'Siege',component:SiegeComponent},
-  {path: 'Habilete',component:HabileteComponent},
-  {path: 'categoriedevehicule',component:CategoriedevehiculeComponent},
+  {path: 'Securite', component:SecuriteComponent},
+  {path: 'Performance', component:PerformanceComponent},
+  {path: 'Confort', component:ConfortComponent},
+  {path: 'Siege', component:SiegeComponent},
+  {path: 'Habilete', component:HabileteComponent},
+  {path: 'categoriedevehicule', component:CategoriedevehiculeComponent},
   {path: 'Energie',component:EnergieComponent},
   {path: 'Transmission',component:TransmissionComponent},
   {path: 'Aideaustation',component:AideaustationComponent},
@@ -64,10 +64,10 @@ const routes: Routes = [
   {path: 'Transmissioninfo',component:TransmissioninfoComponent},
   {path: 'Energieinfo',component:EnergieinfoComponent},
   {path: 'Categorieinfo',component:CatgorieinfoComponent},
-  {path: 'validationrecherche',component:Page28Component}
-  //  {path: 'validationrecherche',component:Page28Component},
+  {path: 'validationrecherche',component:Page28Component},
+   {path: 'Filterparmarques',component:FilterparmarquesComponent},
   //  {path: 'categorie1',component:Page29Component},
-  //  {path: 'resultatdeecherche',component:Page30Component},
+  {path: 'Resultatsdemarecherche',component:ResultatsdemarechercheComponent},
   //  {path: 'detailsfiche1',component:Page31Component},
   //  {path: 'detailsfichesingle',component:Page32Component},
 
